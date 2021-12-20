@@ -1,0 +1,6 @@
+# ignore compiled code
+.rendered*
+__pycache__/
+
+# ignore readme
+*.md

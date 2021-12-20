@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}">
+<!-- JS OAuth code -->
+<script type="text/javascript" src="{{ url_for('static', filename='script/oauth.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<!--500px x 777px-->
+<div id="token"></div>
+<div class="body">
+    <h1>good old title</h1>
+    <h3>and a lil subtitle for effect</h3>
+    <div class="info-box">
+        <p>
+            words words words <br>
+            words words words <br>
+        </p>
+    </div>
+    <button onclick="login()" class="login">Login</button>
+    <button onclick="document.getElementById('token').innerHTML = document.cookie;" class="moreinfo">More info</button>
+</div>
+{% endblock %}
