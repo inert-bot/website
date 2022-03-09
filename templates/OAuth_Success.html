@@ -1,8 +1,0 @@
-<script>
-if (window.opener) {
-  window.opener.postMessage({ code: "{{code}}" }, "https://temp-web.skunkwork.live/");
-  setTimeout(function() { window.close(); }, 500);
-} else {
-  window.location.replace("https://temp-web.skunkwork.live/login?code={{code}}")
-}
-</script>
